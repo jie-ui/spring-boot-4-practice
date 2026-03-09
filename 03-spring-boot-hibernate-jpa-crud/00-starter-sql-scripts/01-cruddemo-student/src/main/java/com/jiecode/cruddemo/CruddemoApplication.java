@@ -46,7 +46,7 @@ starts the embedded Tomcat server,
             //queryForStudent(studentDao);
             //updateStudent(studentDao);
             //deleteStudent(studentDao);
-            deleteAllStudents(studentDao);
+            //deleteAllStudents(studentDao);
         };
 
     }

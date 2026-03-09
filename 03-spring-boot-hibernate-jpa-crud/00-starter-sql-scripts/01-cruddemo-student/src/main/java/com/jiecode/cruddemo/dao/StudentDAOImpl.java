@@ -22,7 +22,7 @@ public class StudentDAOImpl implements StudentDao{
     //inject entity manager using constructor injection
     @Autowired
     //告诉spring请从你的容器里找一个entitymanager实例给我
-    public void setEm(EntityManager em) {
+    public StudentDAOImpl(EntityManager em) {
         this.em = em;
     }
 
