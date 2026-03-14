@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Word - Input Form</title>
+    <!--reference CSS file-->
+</head>
+
+<body>
+<!-- 使用 th:action 指定提交的URL -->
+<form th:action="@{/processFormVerionTwo}" method="POST">
+    <input type="text" name="studentName" placeholder="What's your name?" />
+    <input type="submit" />
+</form>
+</body>
+</html>
