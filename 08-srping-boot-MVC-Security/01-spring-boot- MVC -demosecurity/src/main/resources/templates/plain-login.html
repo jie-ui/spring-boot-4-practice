@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+<!--@ context root,give us access to context path dtnamicty-->
+<form acton="#" th:action="@{/authenticateTheUser}"
+      method="POST">
+    <div th:if="${param.error}">
+        <i>Sorry! You entered invalid username/password.</i>
+    </div>
+    <div th:if="${param.logout}">
+        <i>You have been logged out.</i>
+
+    </div>
+    <p>
+    User Name:<input type="text" name="username"/>
+    </p>
+    <p>
+    Password:<input type="password"  name="password"/>
+    </p>
+    <p>
+        <input type="submit" value="Login"/>
+    </p>
+
+</form>
+
+</body>
+</html>

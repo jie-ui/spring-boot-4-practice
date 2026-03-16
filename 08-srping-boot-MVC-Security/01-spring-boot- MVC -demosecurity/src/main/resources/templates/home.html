@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.thymeleaf.org/extras/springsecurity"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Jie Code Home Page</title>
+</head>
+<body>
+<h2>Jie code Home Page - Yoohon</h2>
+<hr>
+
+<!-- Display user information -->
+<p>User: <span sec:authentication="principal.username"></span></p>
+<p>Role(s): <span sec:authentication="principal.authorities"></span></p>
+
+<hr>
+<p>Welcome to the JieCode home page</p>
+<br>
+<hr>
+<div sec:authorize="hasRole('MANAGE')">
+<!-- Add a link to point to /leaders this is for themanagers-->
+
+<p>
+    <a th:href="@{/leaders}">Leadership meeting</a>
+    (only for Manager peeps)
+</p>
+</div>
+
+<hr>
+<div sec:authorize="hasRole('ADMIN')">
+<p>
+    <a th:href="@{/systems}">Systems meeting</a>
+    (only for Admin peeps)
+</p>
+</div>
+
+
+<!-- Logout form -->
+<form action="#" th:action="@{logout}" method="POST">
+    <input type="submit" value="Logout"/>
+</form>
+
+</body>
+</html>
