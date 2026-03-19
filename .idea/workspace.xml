@@ -6,19 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5b55dddc-742c-41af-ab9e-8a3cfcdcb2b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09-spring-boot-JPA_hibernate_advanced_mapping/02-spring-boot-cruddemo -one_to_many_bi/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/09-spring-boot-JPA_hibernate_advanced_mapping/02-spring-boot-cruddemo -one_to_many_bi/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/09-spring-boot-JPA_hibernate_advanced_mapping/02-spring-boot-cruddemo -one_to_many_bi/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/09-spring-boot-JPA_hibernate_advanced_mapping/02-spring-boot-cruddemo -one_to_many_bi/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/09-spring-boot-JPA_hibernate_advanced_mapping/02-spring-boot-cruddemo -one_to_many_bi/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/09-spring-boot-JPA_hibernate_advanced_mapping/02-spring-boot-cruddemo -one_to_many_bi/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/09-spring-boot-JPA_hibernate_advanced_mapping/02-spring-boot-cruddemo -one_to_many_bi/src/main/java/com/Jiecode/cruddemo/CruddemoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/09-spring-boot-JPA_hibernate_advanced_mapping/02-spring-boot-cruddemo -one_to_many_bi/src/main/java/com/Jiecode/cruddemo/dao/AppDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/09-spring-boot-JPA_hibernate_advanced_mapping/02-spring-boot-cruddemo -one_to_many_bi/src/main/java/com/Jiecode/cruddemo/dao/AppDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/09-spring-boot-JPA_hibernate_advanced_mapping/02-spring-boot-cruddemo -one_to_many_bi/src/main/java/com/Jiecode/cruddemo/entity/Instructor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/09-spring-boot-JPA_hibernate_advanced_mapping/02-spring-boot-cruddemo -one_to_many_bi/src/main/java/com/Jiecode/cruddemo/entity/InstructorDetail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/09-spring-boot-JPA_hibernate_advanced_mapping/02-spring-boot-cruddemo -one_to_many_bi/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/09-spring-boot-JPA_hibernate_advanced_mapping/02-spring-boot-cruddemo -one_to_many_bi/src/test/java/com/Jiecode/cruddemo/ApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +74,8 @@
       <workItem from="1773757591561" duration="14000" />
       <workItem from="1773776207265" duration="98000" />
       <workItem from="1773841081797" duration="77000" />
+      <workItem from="1773863970716" duration="72000" />
+      <workItem from="1773933511326" duration="18000" />
     </task>
     <servers />
   </component>
