@@ -2,10 +2,8 @@ package com.jiecode.aopdemo.aspect;
 
 import com.jiecode.aopdemo.Account;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.*;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
@@ -55,5 +53,42 @@ public class MyDemoLoggingAspect {
         System.out.println("\n=====>>> Executing @Before advice on method");
     }
 
+
+    //add @AFTERtHORWING
+    @AfterThrowing(
+            pointcut = "execution(* com.jiecode.aopdemo.dao.AccountDAO.findAccounts(..))",
+            throwing = "theExc"
+    )
+    public void afterThrowingAddAccountAdvice(JoinPoint theJoinPoint,Throwable theExc) {
+
+        //print out whcih method we are advising on
+        String method = theJoinPoint.getSignature().toShortString();
+        System.out.println("\n=====>>> Executing @AfterThorwing on method: " + method);
+        //log the exception
+
+        System.out.println("\n=====>>>The Executing is: " + theExc.getMessage());
+
+    }
+
+    @Around("execution(* com.jiecode.aopdemo.service.*.getFortune(..))")
+    public Object aroundGetFortune(
+            ProceedingJoinPoint pjp) throws  Throwable{
+        //print out method we are advising on
+        String method = pjp.getSignature().toShortString();
+        System.out.println("\n=====>>> Executing @Around on method: " + method);
+
+        //get begin timestamp
+
+         long start = System.currentTimeMillis();
+        //now lt's execure the method
+Object result = pjp.proceed();
+        //get end timestamp
+long end = System.currentTimeMillis();
+        //compute duration and display it
+long time = end - start;
+System.out.println("\n=====> duration:"+ time/1000.0 + "seconds");
+        return result;
+
+    }
 
 }
